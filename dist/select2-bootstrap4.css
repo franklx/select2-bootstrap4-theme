@@ -1,8 +1,8 @@
 .select2-container--bootstrap4 .select2-selection--single {
-  height: calc(2.25rem + 2px) !important; }
+  height: calc(1.5em + 0.75rem + 2px) !important; }
   .select2-container--bootstrap4 .select2-selection--single .select2-selection__placeholder {
     color: #757575;
-    line-height: 2.25rem; }
+    line-height: calc(1.5em + 0.75rem); }
   .select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
     position: absolute;
     top: 50%;
@@ -20,7 +20,7 @@
       margin-top: -2px;
       position: absolute; }
   .select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
-    line-height: 2.25rem; }
+    line-height: calc(1.5em + 0.75rem); }
 
 .select2-search--dropdown .select2-search__field {
   border: 1px solid #ced4da;
@@ -30,7 +30,7 @@
   color: #6c757d; }
 
 .select2-container--bootstrap4 .select2-selection--multiple {
-  min-height: calc(2.25rem + 2px) !important; }
+  min-height: calc(1.5em + 0.75rem + 2px) !important; }
   .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__rendered {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -77,6 +77,16 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
 
+.select2-container--bootstrap4.select2-container--disabled .select2-selection, .select2-container--bootstrap4.select2-container--disabled.select2-container--focus .select2-selection {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.select2-container--bootstrap4.select2-container--disabled .select2-search__field, .select2-container--bootstrap4.select2-container--disabled.select2-container--focus .select2-search__field {
+  background-color: transparent; }
+
 select.is-invalid ~ .select2-container--bootstrap4 .select2-selection {
   border-color: #dc3545; }
 
@@ -103,12 +113,17 @@ select.is-valid ~ .select2-container--bootstrap4 .select2-selection {
   max-height: 15em;
   overflow-y: auto; }
 
+.select2-container--bootstrap4 .select2-results__options--nested {
+  max-height: inherit;
+  overflow-y: inherit; }
+
 .select2-container--bootstrap4 .select2-results__group {
   padding: 6px;
   display: list-item;
   color: #6c757d; }
 
 .select2-container--bootstrap4 .select2-selection__clear {
+  font-family: sans-serif;
   width: 1.2em;
   height: 1.2em;
   line-height: 1.15em;

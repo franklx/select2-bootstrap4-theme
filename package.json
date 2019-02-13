@@ -1,6 +1,6 @@
 {
-  "name": "@ttskch/select2-bootstrap4-theme",
-  "version": "1.0.5",
+  "name": "select2-bootstrap4-theme",
+  "version": "1.0.6",
   "description": "Select2 v4 theme for Bootstrap4",
   "main": "",
   "style": "select2-bootstrap4.css",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ttskch/select2-bootstrap4-theme.git"
+    "url": "git+ssh://git@github.com/franklx/select2-bootstrap4-theme.git"
   },
   "keywords": [
     "select2",

@@ -35,6 +35,20 @@
         }
     }
 
+    // disabled input box
+    &.select2-container--disabled,
+    &.select2-container--disabled.select2-container--focus {
+        .select2-selection {
+            background-color: $input-disabled-bg;
+            cursor: not-allowed;
+            border-color: $input-border-color;
+            box-shadow: none;
+        }
+        .select2-search__field {
+            background-color: transparent;
+        }
+    }
+
     // validated input box
     select.is-invalid ~ & .select2-selection {
         border-color: $danger;
@@ -75,6 +89,12 @@
         overflow-y: auto;
     }
 
+    // nested ul must be left alone
+    .select2-results__options--nested {
+        max-height: inherit;
+        overflow-y: inherit;
+    }
+
     .select2-results__group {
         padding: 6px;
         display: list-item;
@@ -83,6 +103,7 @@
 
     // all clear button
     .select2-selection__clear {
+        font-family: sans-serif;
         width: 1.2em;
         height: 1.2em;
         line-height: 1.15em;
